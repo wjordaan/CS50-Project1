@@ -1,0 +1,14 @@
+Host
+ec2-50-16-241-91.compute-1.amazonaws.com
+Database
+d533tshk4c7j34
+User
+jtxkscmkyqumew
+Port
+5432
+Password
+4dd3b335c47b4569e766c87a42c5278e299bec7e2682f5b5f442db4d574600e0
+URI
+postgres://jtxkscmkyqumew:4dd3b335c47b4569e766c87a42c5278e299bec7e2682f5b5f442db4d574600e0@ec2-50-16-241-91.compute-1.amazonaws.com:5432/d533tshk4c7j34
+Heroku CLI
+heroku pg:psql postgresql-fluffy-57230 --app cs50projectworking

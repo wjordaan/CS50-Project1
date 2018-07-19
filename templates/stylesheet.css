@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+p {
+    color: red;
+}
+
+.container {
+    background-color: aqua;
+    color: blue;
+}
+
+.test {
+    background-color: aqua;
+    color: blue;
+}
