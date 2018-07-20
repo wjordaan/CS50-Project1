@@ -1,17 +1,29 @@
 {% extends "layout.html" %}
 
 {% block title %}
-    Index
-
+    
 {% endblock %}
-
+    Index
 {% block body %}
 <div class="container">
-    <p>This is just a block of text and such to test blah blah blah<br>
-    more blahh</p>
-    <form class="mainpage" method="post">
-        <input name="searchbar" placeholder="search"> 
-        <button>Search</button>
+    
+    <form method="post" action="/">
+        <div class="search">
+            <input class="searchbar" name="searchbar" placeholder="search"> 
+            <button class="searchbtn">Search</button>
+        </div>
+        <p>This is just a block of text and such to test blah blah blah<br>
+            more blahhk</p>
     </form>
+    <p>1</p>
+    <ul> 
+        {% for book in books %}
+        <li>
+            <a href="{{ url_for('book') }}">
+            {{ book.title }} by {{ book.author }} ({{ book.year }}) isbn: {{book.isbn}}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
 </div>
 {% endblock %}

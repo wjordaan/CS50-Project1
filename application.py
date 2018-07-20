@@ -1,6 +1,6 @@
 import os
 
-from flask import Flask, session, render_template
+from flask import Flask, session, render_template, request
 from flask_session import Session
 from sqlalchemy import create_engine
 from sqlalchemy.orm import scoped_session, sessionmaker
@@ -14,6 +14,8 @@ if not os.getenv("DATABASE_URL"):
 # Configure session to use filesystem
 app.config["SESSION_PERMANENT"] = False
 app.config["SESSION_TYPE"] = "filesystem"
+
+app.config['DEBUG'] = True
 Session(app)
 
 # Set up database
@@ -23,4 +25,6 @@ db = scoped_session(sessionmaker(bind=engine))
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    books = db.execute("SELECT * FROM books").fetchall()
+    return render_template("index.html", books=books)
+
