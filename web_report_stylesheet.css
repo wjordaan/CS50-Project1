@@ -17,7 +17,7 @@ body {
 .dash-debug-menu {
 	display:none;
 }
-._dash-debug-menu {
+.dash-debug-menu dash-debug-menu--closed {
   display: none;
 }
 .page {
