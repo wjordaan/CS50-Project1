@@ -16,7 +16,8 @@ body {
 }
 .dash-debug-menu {
 	display:none;
- .page {
+}
+.page {
 	  position: relative;
 	  width: 210mm;
 	  min-height: 300mm;
