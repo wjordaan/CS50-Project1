@@ -14,6 +14,8 @@ body {
 ._dash-undo-redo {
   display: none;
 }
+.dash-debug-menu {
+	display:none;
  .page {
 	  position: relative;
 	  width: 210mm;
