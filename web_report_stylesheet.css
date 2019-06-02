@@ -11,6 +11,9 @@ body {
 	  box-sizing: border-box;
 	  -moz-box-sizing: border-box;
  }
+._dash-undo-redo {
+  display: none;
+}
  .page {
 	  position: relative;
 	  width: 210mm;
