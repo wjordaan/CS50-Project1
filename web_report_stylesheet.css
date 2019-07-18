@@ -34,7 +34,7 @@ body {
  .subpage {
 	  padding: 1cm;
 	  border: 5px #ccc solid;
-	  height: 297mm;
+	  height: 290mm;
 	  outline: 2cm whitesmoke solid;
  }
 
@@ -45,7 +45,7 @@ body {
  @media print {
 	  html, body {
 			width: 210mm;
-			height: 297mm;        
+			height: 290mm;        
 	  }
 	  .page {
 			margin: 0;
